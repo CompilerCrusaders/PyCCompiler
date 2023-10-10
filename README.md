@@ -1,5 +1,5 @@
 # Compiler Crusaders PyCppCompiler
-#### Coding a C++ Compiler in Python!
+#### Coding a C Compiler in Python!
 Computer Architechture and Organization Final Project
 
 **Developed by**: Andrew Card, Juan Ordaz Herrera, and Roan Morgan
