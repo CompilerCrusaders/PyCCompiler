@@ -4,12 +4,12 @@
 
 int main(void){
 
-    int a = 5;
-    int b = 6;
-    int c = a + b;
-    c = c++;
+    int a = 5; //this line should return 5 tokens
+    int b = 6; //this line should return 5 tokens
+    int c = a + b; //this line should return 9 tokens
+    c = c++; //this line should return 5-6 tokens (depends on how we want to handle ++)
 
-    char s[] = "can you read me?";
+    char descriptiveSymbol[] = "can you read me?"; //this line should return a lot of tokens
 
-    return 0;
+    return 0; //this line should return 3 tokens 
 }

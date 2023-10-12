@@ -19,9 +19,18 @@
 import sys
 import os
 
-test_folder = "/test"
-test_file = "/test/lexertest.c"
-file_path = os.path.join(test_folder, test_file)
+file_path = 'src/test/lexertest.c'
+
+def reformat(charList): # this should remove all the comments and white spaces
+    #NOTE: there are specific circumstances where you do want white space, so it would be beneficial to keep spaces and things
+    #      relevant things to get rid of would be things like spaces between lines and comments; if theres something im forgetting just add it
+    return;
 
 def lexer(charList): # this should go through all the characters in the file and return the tokens
     return;
+
+with open(file_path, 'r') as file:
+    charList = file.read() # this is a string of all the characters in the file
+    print(charList)
+
+
