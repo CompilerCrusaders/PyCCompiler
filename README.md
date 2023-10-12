@@ -1,4 +1,4 @@
-# Compiler Crusaders PyCppCompiler
+# Compiler Crusaders PyCCompiler
 #### Coding a C Compiler in Python!
 Computer Architechture and Organization Final Project
 
