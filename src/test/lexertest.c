@@ -4,6 +4,9 @@
 
 int main(void){
 
+    /*This is a multiline comment
+    this should not show up at all*/
+
     int a = 5; //this line should return 5 tokens
     int b = 6; //this line should return 5 tokens
     int c = a + b; //this line should return 9 tokens

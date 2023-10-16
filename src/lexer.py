@@ -18,19 +18,48 @@
 
 import sys
 import os
+import re
 
 file_path = 'src/test/lexertest.c'
 
-def reformat(charList): # this should remove all the comments and white spaces
-    #NOTE: there are specific circumstances where you do want white space, so it would be beneficial to keep spaces and things
-    #      relevant things to get rid of would be things like spaces between lines and comments; if theres something im forgetting just add it
-    return;
+def reformat(file_path): # this should remove all the comments, tabs, and white spaces
+    modifiedLines = []
+
+    with open(file_path, 'r') as file:
+        code = file.read()
+        lines = code.splitlines()
+
+        
+        modifiedLines = []
+
+        for line in lines:
+            modifiedLine = line.strip()  # Initialize modifiedLine to the original line without leading/trailing whitespaces
+
+            # Check for // and /* */ comments
+            if '//' in modifiedLine:
+                modifiedLine = modifiedLine.split('//')[0]
+            if '/*' in modifiedLine:
+                modifiedLine = modifiedLine.split('/*')[0]
+            if '*/' in modifiedLine:
+                modifiedLine = modifiedLine.split('*/')[1]
+
+            # Replace tabs with spaces
+            modifiedLine = modifiedLine.replace('\t', ' ')
+
+            # Add the modified line to the list if it's not empty
+            if modifiedLine.strip():
+                modifiedLines.append(modifiedLine)
+
+        cleaned_code = '\n'.join(modifiedLines)
+
+    return cleaned_code
 
 def lexer(charList): # this should go through all the characters in the file and return the tokens
     return;
 
-with open(file_path, 'r') as file:
-    charList = file.read() # this is a string of all the characters in the file
-    print(charList)
+reformattedFile = reformat(file_path)
+    
+with open('src/test/processedc.txt', 'w') as file:
+    file.write(reformattedFile)
 
 
