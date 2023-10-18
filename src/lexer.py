@@ -23,7 +23,6 @@ import re
 file_path = 'src/test/lexertest.c'
 
 def reformat(file_path): # this should remove all the comments, tabs, and white spaces
-    modifiedLines = []
 
     with open(file_path, 'r') as file:
         code = file.read()
@@ -54,7 +53,7 @@ def reformat(file_path): # this should remove all the comments, tabs, and white 
 
     return cleaned_code
 
-def lexer(charList): # this should go through all the characters in the file and return the tokens
+def lexer(processedCode): # this should go through all the characters in the reformatted file and return the tokens
     return;
 
 reformattedFile = reformat(file_path)
