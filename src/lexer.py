@@ -43,12 +43,14 @@ def reformat(file_path): # this should remove all the comments, tabs, and white 
 
     return cleaned_code
 
-def lexer(processedCode): # this should go through all the characters in the reformatted file and return the tokens
-    return;
-
-reformattedFile = reformat(file_path)
+def tokenize(processedCode): # this should go through all the characters in the reformatted file and return the tokens
+    tokens = []
+    return tokens;
     
-with open('src/test/processedc.txt', 'w') as file:
-    file.write(reformattedFile)
+def run():
+    reformattedFile = reformat(file_path)
+    
+    with open('src/test/processedc.txt', 'w') as file:
+        file.write(reformattedFile)
 
 

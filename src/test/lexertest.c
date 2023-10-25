@@ -14,5 +14,8 @@ int main(void){
 
     char descriptiveSymbol[] = "can you read me?"; //this line should return a lot of tokens
 
+    for i in range(1, 5):
+        print("this is python code inside of a c file! uh oh! this should be dealt with in the parser")
+
     return 0; //this line should return 3 tokens 
 }
