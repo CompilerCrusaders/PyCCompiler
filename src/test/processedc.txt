@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 int main(void){
-int a = 5; 
-int b = 6; 
-int c = a + b; 
-c = c++; 
-char descriptiveSymbol[] = "can you read me?"; 
+int a = 5;
+int b = 6;
+int c = a + b;
+c = c++;
+char descriptiveSymbol[] = "can you read me?";
 for i in range(1, 5):
 print("this is python code inside of a c file! uh oh! this should be dealt with in the parser")
-return 0; 
+return 0;
 }

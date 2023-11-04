@@ -6,8 +6,9 @@
 
 import lexer as lex
 
-lex.run()
-tokens = lex.tokenize()
+cFile = "src/test/processedc.txt"
+
+tokens = lex.run(cFile) #this will ultimately or temporarily be where we run the lexer code... thats why I put this
 
 
 
