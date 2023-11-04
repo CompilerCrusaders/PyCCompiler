@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/roanl/Documents/Programming/PyCppCompiler/src/test",
-      "program": "c:/Users/roanl/Documents/Programming/PyCppCompiler/src/test/build/Debug/outDebug",
+      "cwd": "c:/Users/roanl/Documents/Programming/PyCppCompiler/PyCppCompiler/src/test",
+      "program": "c:/Users/roanl/Documents/Programming/PyCppCompiler/PyCppCompiler/src/test/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
