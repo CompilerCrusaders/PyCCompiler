@@ -9,7 +9,7 @@ Computer Architechture and Organization Final Project
 <hr>
 
 To Do:
-1. Lexer - _Lexical Analysis_
+1. Lexer - _Lexical Analysis_ - Done
 2. Parser - _Syntax Analysis_
 3. Semantic Analysis
 4. Abstract Syntax Tree
