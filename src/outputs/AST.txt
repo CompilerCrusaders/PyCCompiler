@@ -1,0 +1,7 @@
+Function: main (int)
+  Variable: a (int) = 5
+  Variable: b (int) = 6
+  Variable: c (int) = a + b
+  Assignment: b = b++
+  Variable: symbol1 (char) = x
+  Return: 0

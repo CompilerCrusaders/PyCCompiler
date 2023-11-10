@@ -1,4 +1,6 @@
 import components.lexer as lexer
+from components.parser import Parser
+from components.tokenClass import Token
 import os
 
 testFile = "./src/test/lexertest.c"
@@ -20,4 +22,15 @@ for token in lexRawOutput:
 
 with open("./src/outputs/LexedC.txt", 'w') as outputFile:
     outputFile.write(lexOutput)
+
+tokens = []
+for token in lexRawOutput:
+    tokens.append(Token(token.type, token.value))
+
+parser = Parser(tokens)
+ast = parser.parse()
+file = open("./src/outputs/AST.txt", "w")
+print(ast.print_tree(file))
+file.close()
+
 

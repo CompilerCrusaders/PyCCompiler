@@ -2,7 +2,10 @@ int main(void){
 int a = 5;
 int b = 6;
 int c = a + b;
-c = c++;
-char descriptiveSymbol[] = " /* can you read me? \t \n */";
+b = b++;
+char symbol1 = 'x';
 return 0;
+}
+int add(int a, int b){
+return a + b;
 }
