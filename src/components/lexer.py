@@ -47,7 +47,8 @@ separator_tokens = ['(', ')', '{', '}', '[', ']', ';', ',']
 
 def lex(code):
     # Split the code into words and symbols
-    words_and_symbols = re.findall(r'\".*?\"|\b\w+\b|==|!=|<=|>=|\+\+|--|\+=|-=|\*=|/=|%=|<<|>>|&&|\|\||\S', code)
+    words_and_symbols = re.findall(r'\'.*?\'|\b\w+\b|==|!=|<=|>=|\+\+|--|\+=|-=|\*=|/=|%=|<<|>>|&&|\|\||\S', code)
+    
     tokens_list = []
     for i in range(len(words_and_symbols)):
         word_or_symbol = words_and_symbols[i]
@@ -56,17 +57,17 @@ def lex(code):
         elif i < len(words_and_symbols) - 2 and words_and_symbols[i+1] == '(' and word_or_symbol in datatype_tokens:  # This is a regex for function declarations
             tokens_list.append(Token('FUNCTION', words_and_symbols[i+1]))
             i += 2  # Skip the next two symbols, because we've already processed them
+        elif re.match(r"\'.*?\'", word_or_symbol):  # This is a regex for character values            print(word_or_symbol)
+            tokens_list.append(Token('CHAR', word_or_symbol))
         elif word_or_symbol in datatype_tokens:
             tokens_list.append(Token('DATATYPE', word_or_symbol))
         elif word_or_symbol in keyword_tokens:
             tokens_list.append(Token('KEYWORD', word_or_symbol))
         elif word_or_symbol in separator_tokens:
             tokens_list.append(Token('SEPARATOR', word_or_symbol))
-        elif re.match(r'^[a-zA-Z_][a-zA-Z0-9_]*$', word_or_symbol):  # This is a regex for variable identifiers
-            tokens_list.append(Token('IDENTIFIER', word_or_symbol))
         elif re.match(r'^\d+(\.\d*)?([eE][+-]?\d+)?$', word_or_symbol):  # This is a regex for numeric literals
             tokens_list.append(Token('NUMBER', word_or_symbol))
-        elif re.match(r'^\".*\"$', word_or_symbol):  # This is a regex for strings
-            tokens_list.append(Token('STRING', word_or_symbol))
+        elif re.match(r'^[a-zA-Z_][a-zA-Z0-9_]*$', word_or_symbol) and not re.match(r"^'.'$", word_or_symbol):  # This is a regex for variable identifiers
+            tokens_list.append(Token('IDENTIFIER', word_or_symbol))
 
     return tokens_list

@@ -1,6 +1,7 @@
 import components.lexer as lexer
 from components.parser import Parser
 from components.tokenClass import Token
+#from components.astParser import parse
 import os
 
 testFile = "./src/test/lexertest.c"
@@ -32,5 +33,10 @@ ast = parser.parse()
 file = open("./src/outputs/AST.txt", "w")
 print(ast.print_tree(file))
 file.close()
+
+# #Parse the raw AST
+# astFile = "./src/outputs/AST.txt"
+# parse(astFile)
+
 
 
