@@ -1,8 +1,9 @@
 Function: (int) main 
-  Variable: (int) a (operator) = (int) 5
+  Variable: (int) a (operator) = (int) 5 (operator) + (int) 7
   Variable: (int) b (operator) = (int) 6
   Assignment: (int) b (operator) = (int) b (operator) - (int) 1
-  Variable: (int) c (operator) = (int) a (operator) + (int) b
+  Variable: (int) c (operator) = (int) a (operator) + (int) b (operator) + (int) 4 (operator) + (int) 2
+  Variable: (int) d (operator) = (int) a (operator) * (int) b
   Assignment: (int) c (operator) = (int) c (operator) + (int) 1
   Variable: (char) symbol1 (operator) = (char) 'x'
   Return: (int) 0

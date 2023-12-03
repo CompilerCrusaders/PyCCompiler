@@ -1,8 +1,9 @@
 int main(void){
-int a = 5;
+int a = 5 + 7;
 int b = 6;
 b = b--;
-int c = a + b;
+int c = a + b + 4 + 2;
+int d = a * b;
 c = c++;
 char symbol1 = 'x';
 return 0;

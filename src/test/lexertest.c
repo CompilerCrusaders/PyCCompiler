@@ -8,16 +8,18 @@ int main(void){
 
     
 
-    int a = 5; 
-            //This is a single line comment
-    int b = 6;
-    b = b--;
+    int a = 5 + 7; 
+             //This is a single line comment
+     int b = 6;
+     b = b--;
     
-    int c = a + b;
+     int c = a + b + 4 + 2;
 
-    c = c++;
+     int d = a * b;
 
-    char symbol1 = 'x';
+     c = c++;
+
+     char symbol1 = 'x';
 
     return 0; 
 }
