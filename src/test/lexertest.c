@@ -1,4 +1,3 @@
-
 int main(void){
 
     /*This is a multiline comment
@@ -6,10 +5,18 @@ int main(void){
     
     this should not show up at all*/
 
-    int a = 5;
-    int b = 6;
+    
 
+    int a = 5; 
+            //This is a single line comment
+    int b = 6;
+    b = b--;
+    
     int c = a + b;
+
+    c = c++;
+
+    char symbol1 = 'x';
 
     return 0; 
 }

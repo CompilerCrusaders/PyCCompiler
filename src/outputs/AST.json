@@ -1,1 +1,289 @@
-{"name": "Program", "branches": [{"name": "Function", "branches": [{"name": "int", "branches": [{"name": "main", "branches": [{"name": "Variable", "branches": [{"name": "operator", "branches": [{"name": "=", "branches": [{"name": "(int)", "branches": [{"name": "a", "branches": []}]}, {"name": "(int)", "branches": [{"name": "5", "branches": []}]}]}]}]}, {"name": "Variable", "branches": [{"name": "operator", "branches": [{"name": "=", "branches": [{"name": "(int)", "branches": [{"name": "b", "branches": []}]}, {"name": "(int)", "branches": [{"name": "6", "branches": []}]}]}]}]}, {"name": "Variable", "branches": [{"name": "operator", "branches": [{"name": "=", "branches": [{"name": "(int)", "branches": [{"name": "c", "branches": []}]}, {"name": "operator", "branches": [{"name": "+", "branches": [{"name": "(int)", "branches": [{"name": "a", "branches": []}]}, {"name": "(int)", "branches": [{"name": "b", "branches": []}]}]}]}]}]}]}, {"name": "Return", "branches": [{"name": "(int)", "branches": [{"name": "0", "branches": []}]}]}]}]}]}]}
+{
+    "name": "Program",
+    "branches": [
+        {
+            "name": "Function",
+            "branches": [
+                {
+                    "name": "int",
+                    "branches": [
+                        {
+                            "name": "main",
+                            "branches": [
+                                {
+                                    "name": "Variable",
+                                    "branches": [
+                                        {
+                                            "name": "operator",
+                                            "branches": [
+                                                {
+                                                    "name": "=",
+                                                    "branches": [
+                                                        {
+                                                            "name": "(int)",
+                                                            "branches": [
+                                                                {
+                                                                    "name": "a",
+                                                                    "branches": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "(int)",
+                                                            "branches": [
+                                                                {
+                                                                    "name": "5",
+                                                                    "branches": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Variable",
+                                    "branches": [
+                                        {
+                                            "name": "operator",
+                                            "branches": [
+                                                {
+                                                    "name": "=",
+                                                    "branches": [
+                                                        {
+                                                            "name": "(int)",
+                                                            "branches": [
+                                                                {
+                                                                    "name": "b",
+                                                                    "branches": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "(int)",
+                                                            "branches": [
+                                                                {
+                                                                    "name": "6",
+                                                                    "branches": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Assignment",
+                                    "branches": [
+                                        {
+                                            "name": "operator",
+                                            "branches": [
+                                                {
+                                                    "name": "=",
+                                                    "branches": [
+                                                        {
+                                                            "name": "(int)",
+                                                            "branches": [
+                                                                {
+                                                                    "name": "b",
+                                                                    "branches": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "operator",
+                                                            "branches": [
+                                                                {
+                                                                    "name": "-",
+                                                                    "branches": [
+                                                                        {
+                                                                            "name": "(int)",
+                                                                            "branches": [
+                                                                                {
+                                                                                    "name": "b",
+                                                                                    "branches": []
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "name": "(int)",
+                                                                            "branches": [
+                                                                                {
+                                                                                    "name": "1",
+                                                                                    "branches": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Variable",
+                                    "branches": [
+                                        {
+                                            "name": "operator",
+                                            "branches": [
+                                                {
+                                                    "name": "=",
+                                                    "branches": [
+                                                        {
+                                                            "name": "(int)",
+                                                            "branches": [
+                                                                {
+                                                                    "name": "c",
+                                                                    "branches": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "operator",
+                                                            "branches": [
+                                                                {
+                                                                    "name": "+",
+                                                                    "branches": [
+                                                                        {
+                                                                            "name": "(int)",
+                                                                            "branches": [
+                                                                                {
+                                                                                    "name": "a",
+                                                                                    "branches": []
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "name": "(int)",
+                                                                            "branches": [
+                                                                                {
+                                                                                    "name": "b",
+                                                                                    "branches": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Assignment",
+                                    "branches": [
+                                        {
+                                            "name": "operator",
+                                            "branches": [
+                                                {
+                                                    "name": "=",
+                                                    "branches": [
+                                                        {
+                                                            "name": "(int)",
+                                                            "branches": [
+                                                                {
+                                                                    "name": "c",
+                                                                    "branches": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "operator",
+                                                            "branches": [
+                                                                {
+                                                                    "name": "+",
+                                                                    "branches": [
+                                                                        {
+                                                                            "name": "(int)",
+                                                                            "branches": [
+                                                                                {
+                                                                                    "name": "c",
+                                                                                    "branches": []
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "name": "(int)",
+                                                                            "branches": [
+                                                                                {
+                                                                                    "name": "1",
+                                                                                    "branches": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Variable",
+                                    "branches": [
+                                        {
+                                            "name": "operator",
+                                            "branches": [
+                                                {
+                                                    "name": "=",
+                                                    "branches": [
+                                                        {
+                                                            "name": "(char)",
+                                                            "branches": [
+                                                                {
+                                                                    "name": "symbol1",
+                                                                    "branches": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "(char)",
+                                                            "branches": [
+                                                                {
+                                                                    "name": "'x'",
+                                                                    "branches": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Return",
+                                    "branches": [
+                                        {
+                                            "name": "(int)",
+                                            "branches": [
+                                                {
+                                                    "name": "0",
+                                                    "branches": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
