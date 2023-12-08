@@ -9,6 +9,7 @@
 
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyArrowPatch
+import json
 
 class Node:
     def __init__(self, name, branches):
@@ -19,6 +20,14 @@ class Node:
         print(indent + self.name)
         for branch in self.branches:
             branch.print_node(indent + "  ")
+
+    def to_dict(self):
+        return {"name": self.name, "branches": [branch.to_dict() for branch in self.branches]}
+
+    def saveNode(self, filename):
+        with open(filename, 'w') as f:
+            json.dump(self.to_dict(), f)
+        
 
 def draw_tree(ax, node, x, y, dx, dy, level=0, max_levels=None):
     if max_levels is not None and level >= max_levels:
@@ -36,12 +45,13 @@ def draw_tree(ax, node, x, y, dx, dy, level=0, max_levels=None):
             next_x += dx / num_branches
 
 def plot_tree(root, max_levels=None):
-    fig, ax = plt.subplots(figsize=(8, 8))
+    fig, ax = plt.subplots(figsize=(5, 5))
     ax.axis('off')
 
-    draw_tree(ax, root, 0.5, 1, 3, 0.07, max_levels=max_levels)
+    draw_tree(ax, root, 1, 1, 2, 0.1, max_levels=max_levels)
 
-    plt.show()
+    #Save the figure
+    plt.savefig('src\outputs\AST.png', bbox_inches='tight')
 
 def parse_operator(operator, left, right):
 
@@ -118,13 +128,3 @@ def parse_to_ast(input_string):
                   
 
     return masterNode
-
-text = ""
-with open("src\outputs\AST.txt") as file:
-    text = file.read()
-    
-master = parse_to_ast(text)
-
-master.print_node("")
-
-plot_tree(master, max_levels=15)

@@ -6,20 +6,10 @@ int main(void){
     
     this should not show up at all*/
 
-    
+    int a = 5;
+    int b = 6;
 
-    int a = 5 + 7; 
-             //This is a single line comment
-     int b = 6;
-     b = b--;
-    
-     int c = a + b + 4 + 2;
-
-     int d = a * b;
-
-     c = c++;
-
-     char symbol1 = 'x';
+    int c = a + b;
 
     return 0; 
 }

@@ -1,7 +1,7 @@
 import components.lexer as lexer
 from components.parser import Parser
 from components.tokenClass import Token
-#from components.astParser import parse
+import components.astParser as astParser
 import os
 
 testFile = "./src/test/lexertest.c"
@@ -30,13 +30,15 @@ for token in lexRawOutput:
 
 parser = Parser(tokens)
 ast = parser.parse()
-file = open("./src/outputs/AST.txt", "w")
-print(ast.print_tree(file))
-file.close()
 
-# #Parse the raw AST
-# astFile = "./src/outputs/AST.txt"
-# parse(astFile)
+with open("./src/outputs/AST.txt", 'w') as outputFile:
+    ast.print_tree(outputFile)
+with open("./src/outputs/AST.txt", 'r') as outputFile:  
+    astMasterNode = astParser.parse_to_ast(outputFile.read())
+
+
+astParser.plot_tree(astMasterNode, max_levels=15)
+astMasterNode.saveNode("./src/outputs/AST.json")
 
 
 
